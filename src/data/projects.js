@@ -7,7 +7,7 @@ export const projects = [
     {
         title: "React - Portfolio",
         image: portfolio,
-        link: "https://github.com/JB2DEV/React-Portfoliogit"
+        link: "https://github.com/JB2DEV/React-Portfolio"
     },
     {
         title: "React - GifApp",

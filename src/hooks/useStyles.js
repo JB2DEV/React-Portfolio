@@ -1,6 +1,5 @@
 import { makeStyles } from '@material-ui/core';
 
-
 export const useStyles = makeStyles((theme) => ({
     appBar: {
         backgroundColor: "#fafafa",
@@ -8,6 +7,18 @@ export const useStyles = makeStyles((theme) => ({
         left: 0,
         right: 0,
 
+    },
+    appbartitle: {
+        display: "none",
+        color: theme.palette.primary.main,
+        fontWeight: 700,
+        margin: "0 auto",
+        [theme.breakpoints.down("xs")]: {
+            display: "flex",
+        },
+        [theme.breakpoints.down("sm")]: {
+            display: "flex",
+        }
     },
     toolbar: {
         display: "flex",
@@ -22,9 +33,7 @@ export const useStyles = makeStyles((theme) => ({
         }
     },
     menu: {
-        [theme.breakpoints.down("sm")]: {
-            display: "none"
-        },
+
         "& a": {
             color: theme.palette.secondary.main,
             fontSize: "1.6rem",
@@ -35,7 +44,10 @@ export const useStyles = makeStyles((theme) => ({
             cursor: "pointer",
             color: theme.palette.primary.main,
             borderBottom: "3px solid #884EA0"
-        }
+        },
+        [theme.breakpoints.down("sm")]: {
+            display: "none"
+        },
     },
     menubutton: {
         display: "none",
@@ -67,9 +79,6 @@ export const useStyles = makeStyles((theme) => ({
     },
     sidebar: {
         width: "40vw",
-        [theme.breakpoints.down("sm")]: {
-            width: "60vw",
-        },
         "& h5": {
             margin: theme.spacing(10, 0, 0, 4),
             fontSize: "1.4rem",
@@ -80,10 +89,20 @@ export const useStyles = makeStyles((theme) => ({
             color: theme.palette.primary.main,
             cursor: "pointer",
 
-        }
+        },
+        [theme.breakpoints.down("xs")]: {
+            width: "65vw",
+            "& h5": {
+                fontSize: "1rem",
+            },
+        },
     },
     section: {
         minHeight: "100vh",
+        [theme.breakpoints.down("sm")]: {
+            minHeight: "70vh",
+
+        }
     },
     sectiontitle: {
         textAlign: "center",
@@ -103,6 +122,9 @@ export const useStyles = makeStyles((theme) => ({
         display: "flex",
         marginTop: theme.spacing(6),
         position: "relative",
+        [theme.breakpoints.down("xs")]: {
+            width: "auto"
+        }
     },
     cardmedia: {
         width: "40vw",
@@ -110,21 +132,34 @@ export const useStyles = makeStyles((theme) => ({
         borderRadius: "10px",
         margin: theme.spacing(5),
         [theme.breakpoints.down("xs")]: {
-            height: "60vw",
-            width: "400px"
-        }
+            height: "230px",
+            width: "300px",
+            margin: theme.spacing(2),
+        },
+
     },
     cardcontent: {
         width: "40vw",
-        marginTop: theme.spacing(2),
         "& h2": {
             marginTop: theme.spacing(2),
+
         },
         "& h3": {
             marginTop: theme.spacing(2),
+            color: theme.palette.primary.main,
+            fontSize: "2rem",
+            fontWeight: "700px",
+            [theme.breakpoints.down("xs")]: {
+                fontSize: "1rem"
+            }
         },
         "& h4": {
             marginTop: theme.spacing(2),
+            fontSize: "1.5rem",
+
+            [theme.breakpoints.down("xs")]: {
+                fontSize: "0.6rem"
+            }
         },
         "& h6": {
             marginTop: theme.spacing(2),
@@ -137,28 +172,7 @@ export const useStyles = makeStyles((theme) => ({
                 display: "none"
             }
         },
-        "& p": {
-            fontSize: "0.5rem"
-        }
 
-    },
-    lookingforajoob: {
-        marginTop: theme.spacing(2),
-        fontSize: "2rem",
-        color: "black",
-        fontWeight: 700,
-        [theme.breakpoints.down("xs")]: {
-            fontSize: "0.9rem",
-        },
-    },
-    quote: {
-        fontStyle: "italic",
-        [theme.breakpoints.down("xs")]: {
-            display: "none"
-        },
-        [theme.breakpoints.down("sm")]: {
-            display: "none"
-        }
     },
     pdfbutton: {
         position: "absolute",
@@ -177,16 +191,37 @@ export const useStyles = makeStyles((theme) => ({
         "& a:hover": {
             color: theme.palette.primary.main,
         },
+        [theme.breakpoints.down("xs")]: {
+            width: "60px",
+            height: "40px",
+            fontSize: "0.6rem",
+            bottom: "2rem",
+            right: "1rem",
+            fontSize: "0.5rem"
+        },
         [theme.breakpoints.down("sm")]: {
             bottom: "2rem",
             right: "1rem",
-        }
+        },
+
     },
     timeline: {
-        margin: theme.spacing(4)
+        marginTop: theme.spacing(2),
+        "& h6": {
+            fontSize: "10px"
+        }
     },
     timelinelogo: {
         width: "35px",
+        [theme.breakpoints.down("xs")]: {
+            width: "30px",
+        }
+    },
+    stars: {
+        [theme.breakpoints.down("xs")]: {
+            margin: "0,40",
+            size: 10
+        }
     },
     grid: {
         marginTop: "60px",
@@ -204,6 +239,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     textocaratula: {
         textAlign: "center",
+        marginTop: theme.spacing(3),
     },
     contactmepaper: {
 
@@ -228,6 +264,18 @@ export const useStyles = makeStyles((theme) => ({
         "& button:hover": {
             backgroundColor: theme.palette.primary.main,
             color: "#fff"
+        },
+        [theme.breakpoints.down("xs")]: {
+            "& button": {
+                backgroundColor: theme.palette.primary.main,
+                color: "#fff",
+            },
+        },
+        [theme.breakpoints.down("sm")]: {
+            "& button": {
+                backgroundColor: theme.palette.primary.main,
+                color: "#fff",
+            },
         }
 
     },
@@ -239,8 +287,8 @@ export const useStyles = makeStyles((theme) => ({
     },
     footer: {
         backgroundColor: theme.palette.primary.main,
-        height: "100px",
-
+        height: "auto",
+        width: "auto",
     },
     footericons: {
         display: "flex",
@@ -248,9 +296,16 @@ export const useStyles = makeStyles((theme) => ({
         marginLeft: "auto",
         marginRight: "auto",
         paddingTop: theme.spacing(2),
+        paddingBottom: theme.spacing(4),
+
         "& p": {
             fontSize: "1.3rem",
             fontWeight: 700
+        },
+        "& p.footericontext": {
+            [theme.breakpoints.down("xs")]: {
+                display: "none"
+            },
         },
         "& a": {
             textDecoration: "none",

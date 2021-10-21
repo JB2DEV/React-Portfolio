@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import { useStyles } from '../hooks/useStyles'
 import emailjs from 'emailjs-com'
 import { Stack,Snackbar,Alert } from '@mui/material';
+import { animateScroll as scroll } from 'react-scroll'
 
 
 export const Contact = ({ title, dark, id }) => {
@@ -23,10 +24,12 @@ export const Contact = ({ title, dark, id }) => {
         setOpen(false);
     };
 
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    }
 
     const sendEmail = (e) => {
         e.preventDefault();
-
         emailjs.sendForm('service_vvm5chi', 'template_y5ixxdg', e.target, 'user_ahRtZvAiPCLPEszcoqjLB')
             .then((result) => {
                 handleSucces()
@@ -35,6 +38,7 @@ export const Contact = ({ title, dark, id }) => {
                 console.log(error.text);
             });
         e.target.reset();
+        scrollToTop();
     };
     return (
         <div className={`${styles.section} ${dark && styles.sectiondark}`}>

@@ -2,7 +2,7 @@ import { AppBar, Divider, Drawer, IconButton, List, ListItem, ListItemIcon, Tool
 import React, { useState } from 'react'
 import { useStyles } from '../hooks/useStyles'
 import logo from '../images/react-logo.png'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link} from 'react-scroll'
 import { BuildTwoTone, Cancel, ContactMailTwoTone, EmojiObjectsTwoTone, Info } from '@material-ui/icons'
 import MenuIcon from '@material-ui/icons/Menu'
 
@@ -11,9 +11,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 export const NavBar = () => {
     const styles = useStyles();
     const [open, setOpen] = useState(false);
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-    }
+
     const links = [
     {
         id: "about",
@@ -44,13 +42,6 @@ export const NavBar = () => {
         <>
             <AppBar position="sticky" className={styles.appBar}>
                 <Toolbar className={styles.toolbar}>
-                    <img 
-                        src={logo} 
-                        className={styles.logo} 
-                        alt="Logo"
-                        onClick={scrollToTop}
-                    />
-
                     <List className={styles.menu}>
                         {
                             links.map(({ id, text }, index) => (
@@ -68,6 +59,7 @@ export const NavBar = () => {
                             ))
                         }
                     </List>
+                    <span className={styles.appbartitle}>PORTFOLIO</span>
                     <IconButton className={styles.menubutton} onClick={() => setOpen(!open)}>
                         <MenuIcon fontSize="large" />
                     </IconButton>

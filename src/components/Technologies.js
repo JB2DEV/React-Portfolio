@@ -9,13 +9,13 @@ import { StarRating } from './StarRating'
 export const Technologies = () => {
 
     const styles = useStyles();
+
     return (
         <div>
             <Timeline align="alternate" className={styles.timeline}>
+
                 {
-                    skills.sort(function(a,b){
-                        return b.stars - a.stars;
-                    }),
+
                     skills.map(({ src, title, stars }, index) => (
                         <TimelineItem key={index}>
                             <TimelineOppositeContent>
@@ -33,6 +33,7 @@ export const Technologies = () => {
                         </TimelineItem>
                     ))
                 }
+
             </Timeline>
         </div>
     )

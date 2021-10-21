@@ -110,4 +110,6 @@ export const skills = [
         stars: 3
     },
 
-]
+].sort(function (a, b) {
+    return b.stars - a.stars;
+});

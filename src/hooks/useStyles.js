@@ -132,8 +132,8 @@ export const useStyles = makeStyles((theme) => ({
         borderRadius: "10px",
         margin: theme.spacing(5),
         [theme.breakpoints.down("xs")]: {
-            height: "230px",
-            width: "300px",
+            height: "200px",
+            width: "280px",
             margin: theme.spacing(2),
         },
 
@@ -158,7 +158,8 @@ export const useStyles = makeStyles((theme) => ({
             fontSize: "1.5rem",
 
             [theme.breakpoints.down("xs")]: {
-                fontSize: "0.6rem"
+                fontSize: "0.55rem",
+                fontWeight: 600,
             }
         },
         "& h6": {
@@ -178,6 +179,7 @@ export const useStyles = makeStyles((theme) => ({
         position: "absolute",
         bottom: "5rem",
         right: "4rem",
+        width: "200px",
         backgroundColor: theme.palette.primary.main,
         background: theme.palette.primary.main,
         padding: theme.spacing(3),
@@ -193,13 +195,13 @@ export const useStyles = makeStyles((theme) => ({
             color: theme.palette.primary.main,
         },
         [theme.breakpoints.down("xs")]: {
-            width: "60px",
-            height: "40px",
+            backgroundColor: theme.palette.primary.main,
+            width: "30px",
+            height: "30px",
             fontSize: "0.4rem",
-            bottom: "2rem",
-            right: "1rem",
         },
         [theme.breakpoints.down("sm")]: {
+            backgroundColor: theme.palette.primary.main,
             bottom: "2rem",
             right: "1rem",
         },

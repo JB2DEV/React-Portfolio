@@ -39,7 +39,7 @@ export const AboutMe = ({ title, dark, id }) => {
                     <CardActions>
                         <Button variant="contained" className={styles.pdfbutton}>
                             <a href={pdf} download >
-                                Download CV
+                                CV
                             </a>
 
                         </Button>

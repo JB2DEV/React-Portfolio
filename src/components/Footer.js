@@ -1,21 +1,18 @@
 import { Container } from '@material-ui/core';
-import { Email, Person, LinkedIn } from '@material-ui/icons';
+import { Email, GitHub, LinkedIn } from '@material-ui/icons';
 import React from 'react'
 import { useStyles } from '../hooks/useStyles'
-import { animateScroll as scroll } from 'react-scroll'
 
 
 export const Footer = () => {
     const styles = useStyles();
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-    }
+
     return (
         <div className={styles.footer}>
             <footer>
                 <div className={styles.footericons}>
                     <Container >
-                        <a onClick={scrollToTop}><Person fontSize="large" /> </a>
+                        <a href="https://github.com/JB2DEV" className="footerprofileicon"><GitHub fontSize="large" /> </a>
                         <p className="footericontext">Javier Alvarez Caceres</p>
                     </Container>
                     <Container>

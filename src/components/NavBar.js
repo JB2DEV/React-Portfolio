@@ -1,7 +1,6 @@
 import { AppBar, Divider, Drawer, IconButton, List, ListItem, ListItemIcon, Toolbar } from '@material-ui/core'
 import React, { useState } from 'react'
 import { useStyles } from '../hooks/useStyles'
-import logo from '../images/react-logo.png'
 import { Link} from 'react-scroll'
 import { BuildTwoTone, Cancel, ContactMailTwoTone, EmojiObjectsTwoTone, Info } from '@material-ui/icons'
 import MenuIcon from '@material-ui/icons/Menu'

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box } from '@material-ui/core'
 import { Rating } from '@material-ui/lab'
-import { StylesContext } from '@material-ui/styles'
 import { useStyles } from '../hooks/useStyles'
 
 

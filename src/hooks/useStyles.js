@@ -194,7 +194,8 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down("xs")]: {
             width: "60px",
             height: "40px",
-            fontSize: "0.6rem",
+            fontSize: "0.4rem",
+            fontWeight: 700,
             bottom: "2rem",
             right: "1rem",
         },

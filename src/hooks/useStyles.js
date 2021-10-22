@@ -179,6 +179,7 @@ export const useStyles = makeStyles((theme) => ({
         bottom: "5rem",
         right: "4rem",
         backgroundColor: theme.palette.primary.main,
+        background: theme.palette.primary.main,
         padding: theme.spacing(3),
         "&:hover": {
             backgroundColor: "#fff"
@@ -195,7 +196,6 @@ export const useStyles = makeStyles((theme) => ({
             width: "60px",
             height: "40px",
             fontSize: "0.4rem",
-            fontWeight: 700,
             bottom: "2rem",
             right: "1rem",
         },

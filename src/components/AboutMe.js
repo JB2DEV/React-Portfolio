@@ -2,7 +2,7 @@ import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@
 import React from 'react'
 import { useStyles } from '../hooks/useStyles';
 import profileImage from "../images/profile.jpeg";
-import pdf from "../data/CV_JavierAlvarez_2021.pdf";
+import pdf from "../data/CV_JavierAlvarez_2022.pdf";
 import Delayed from '../utils/Delayed';
 
 
@@ -25,13 +25,13 @@ export const AboutMe = ({ title, dark, id }) => {
                         </Delayed>
                         <Delayed waitBeforeShow={10000}>
                             <Typography variant="h6" color="textSecondary">
-                                I am a 21-year-old boy who lives in Spain, Barcelona and
+                                I'm a 21-year-old boy who lives in Spain, Barcelona and
                                 I have recently obtained the Certificate of
                                 Higher Education of Multiplatform Applications Development.
-                                I would like to dedicate my professional career in
-                                mobile software development mainly but I am open
-                                to work in other stacks like FrontEnd developer,
-                                Backend Developer or FullStack developer.
+                                Nowadays, I'm currently developing microservices with Spring and SpringBoot 
+                                in the GFT Backend team, working for Caser as a client.
+                                Also, I would like to dedicate my professional career in
+                                mobile software development mainly.
                             </Typography>
 
                         </Delayed>

@@ -16,9 +16,49 @@ import python from '../images/python-logo.png'
 import react from '../images/react-logo.png'
 import sql from '../images/sql-logo.png'
 import kotlin from '../images/kotlin-logo.png'
-
+import springboot from '../images/spring-boot-logo.jpg'
+import spring from '../images/spring-logo.png'
+import swagger from '../images/swagger-logo.png'
+import springbatch from '../images/spring-batch-logo.png'
+import junit from '../images/junit-logo.png'
 
 export const skills = [
+
+    {
+        src: java,
+        title: "Java",
+        stars: 3
+    },
+    {
+        src: springboot,
+        title: "Spring\nBoot",
+        stars: 3
+    },
+    {
+        src: spring,
+        title: "Spring",
+        stars: 3
+    },
+        {
+        src: sql,
+        title: "SQL",
+        stars: 3
+    },
+    {
+        src: swagger,
+        title: "Swagger",
+        stars: 3
+    },
+    {
+        src: springbatch,
+        title: "Spring\nBatch",
+        stars: 2
+    },
+    {
+        src: junit,
+        title: "JUnit",
+        stars: 2
+    },
     {
         src: dart,
         title: "Dart",
@@ -47,12 +87,17 @@ export const skills = [
     {
         src: kotlin,
         title: "Kotlin",
-        stars: 1
+        stars: 2
     },
     {
         src: c,
         title: "C",
         stars: 1
+    },
+    {
+        src: html,
+        title: "HTML",
+        stars: 2
     },
     {
         src: css,
@@ -68,16 +113,6 @@ export const skills = [
         src: jest,
         title: "Jest",
         stars: 1
-    },
-    {
-        src: html,
-        title: "HTML",
-        stars: 2
-    },
-    {
-        src: java,
-        title: "Java",
-        stars: 3
     },
     {
         src: js,
@@ -104,11 +139,7 @@ export const skills = [
         title: "React",
         stars: 2
     },
-    {
-        src: sql,
-        title: "SQL",
-        stars: 3
-    },
+
 
 ].sort(function (a, b) {
     return b.stars - a.stars;
